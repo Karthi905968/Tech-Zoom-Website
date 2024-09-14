@@ -1,0 +1,171 @@
+.wd-course{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.wd-section1{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.wd-section1 section{
+    max-width: 500px;
+}
+
+.wd-section1 section h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.wd-section1 section h1 span{
+    color: #0163FD;
+}
+
+.wd-section1 section p{
+    margin: 1rem 0;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.wd-section2{
+    margin: 5rem 0;
+}
+
+.wd-section2 h2{
+    margin: 1rem 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.wd-section2 img{
+    margin: 5rem auto;
+    width: 70%;
+}
+
+.wd-section3{
+    margin: 3rem 0;
+}
+
+.wd-section3 h2{
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.wd-section3>div{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background-color: white;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.wd-section3>div section{
+    max-width: 500px;
+}
+
+.wd-section3>div section h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.wd-section3>div section p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: justify;
+}
+
+.wd-section3>div section h1 span{
+    color: #0163FD;
+}
+
+.wd-section4{
+    margin: 5rem 0;
+}
+
+.wd-section4 h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.wd-section4 img{
+    margin: 3rem auto;
+    max-width: 50%;
+}
+
+.wd-section5{
+    margin: 3rem 0;
+    background-color: #E9F1FD;
+}
+
+.wd-section5 main{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.wd-section5 main section{
+    max-width: 500px;
+}
+
+.wd-section5 main section h1{
+    margin: 1rem 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.wd-section5 main section h2{
+    margin: 1rem 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.wd-section5 main section p{
+    margin: 1rem 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.wd-section5 main section a{
+    display: inline-block;
+    text-align: center;
+    background-color: #0163FD;
+    padding: 0.75rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    width: auto;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .wd-section4 img{
+        max-width: 100%;
+    }
+
+    .wd-section2 img{
+        margin: 5rem auto;
+        width: 100%;
+    }
+}

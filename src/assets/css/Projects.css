@@ -1,0 +1,110 @@
+.Projects-page{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+
+.project-section1{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-section1>img{
+    border-radius: 8px;
+}
+
+.project-section1>section{
+    margin: 1rem 0;
+    max-width: 500px;
+}
+
+.project-section1>section>h1{
+    font-size: 30px;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+.project-section1>section>h1>span{
+    color: #0163FD;
+}
+
+.project-section1>section>p{
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.project-section2{
+    margin: 4rem 0;
+}
+
+.project-section2>h1{
+    font-size: 30px;
+    margin: 0.5rem 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.project-section2>p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.project-section2 section{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.project-section2 section>img{
+    width: 500px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #E4E4E7;
+}
+
+.project-section2 section>main{
+    width: 500px;
+}
+
+.project-section2 section>main>h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.project-section2 section>main>h1{
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.project-section2 section>main>h1>span{
+  font-weight: 700;
+  color: black;
+}
+
+.project-section2 section>main>h1{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+
+
+
+@media (min-width: 1000px){
+    .project-section1>img{
+        width: 35%;
+    }
+} 

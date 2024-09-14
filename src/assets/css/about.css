@@ -1,0 +1,140 @@
+.about-page{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.about-section1{
+    margin-top:1.5rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #E4E4E7;
+}
+
+
+
+.about-section1 section{
+    width: 500px;
+    flex-grow: 0.15;
+}
+
+
+.about-section1 section h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.about-section1 section p{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    color: #333;
+}
+
+.about-section2{
+    margin:5rem auto;
+}
+
+.about-section2>h1{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.about-section2>p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.about-section2 .goals{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about-section2 .goals section{
+    padding: 1.5rem;
+    width: 450px;
+    border-radius: 4px;
+    background-color: white;
+    flex-grow: 1.5;
+}
+
+.about-section2 .goals section img{
+   height: 45px;
+   width: 45px;
+}
+
+.about-section2 .goals section h1{
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about-section2 .goals section p{
+    font-weight: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: justify;
+}
+
+.about-section3{
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 4px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.about-section3 section{
+    width: 600px;
+}
+
+.about-section3 section h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.about-section3 section h1>span{
+    color: #0163FD;
+}
+
+.about-section3 section p{
+    margin-bottom: 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    text-align: justify;
+}
+
+.about-section3  button{
+    padding: 1rem 3rem;
+    color: white;
+    font-weight: 600;
+    background-color: #0163FD;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.img-section img{
+    border-radius: 6px;
+}
+
+@media (min-width:1000x) {
+    .about-section1 img{
+        width: 40%;
+    }
+}

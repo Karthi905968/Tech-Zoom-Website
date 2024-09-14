@@ -1,0 +1,257 @@
+
+
+/* General styling for the navbar */
+header{
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color:#F7F7F8;
+    z-index: 100;
+    }
+    
+    header.active{
+      box-shadow: 0 0 6px lightgray;
+    }
+    
+    .navbar {
+      height: 100%;
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-size: 35px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 0.5rem;
+    }
+
+    .logo>img{
+      width: 55px;
+      height: 54px;
+    }
+    
+    .burger {
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+      z-index: 11;
+    }
+    
+    /* Styling for the menu links */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+    
+    .nav-links li{
+      margin:0rem 0.75rem;
+    }
+    
+    .nav-links li a {
+      text-decoration: none;
+      color: #000;
+      font-size: 16px;
+      padding: 6px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    
+    
+    /* Highlighting the active link */
+    .nav-links li a.active{
+      color: #0163FD;
+      border-radius: 4px;
+    }
+    
+    
+    
+    .get-started a:hover{
+      background-color: #2375f7;
+    }
+    
+    .get-started a{
+     background-color: #0163FD;
+     color: white;
+     border-radius: 4px;
+     font-size: 14px;
+     font-weight: 500;
+     padding: 0.5rem;
+     text-decoration: none;
+    }
+
+    #contact-link{
+        display: none;
+    }
+    
+    
+    /* Circular animation and visibility handling for mobile view */
+    @keyframes circularOpen {
+      from {
+        clip-path: circle(0% at 100% 0%);
+      }
+      to {
+        clip-path: circle(100% at 50% 50%);
+      }
+    }
+    
+    @keyframes circularClose {
+      from {
+        clip-path: circle(100% at 50% 50%);
+      }
+      to {
+        clip-path: circle(0% at 100% 0%);
+      }
+    }
+
+
+
+    
+@media (max-width: 768px) {
+    /* Burger icon visible */
+    .burger {
+      display: block;
+    }
+
+    .get-started{
+        display: none;
+    }
+
+    #contact-link{
+        display: block;
+    }
+  
+  
+    /* Hide the menu by default */
+    .nav-links {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 0;
+      background-color: #E9F1FD;
+      color: black;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: height 0.3s ease-in-out;
+      clip-path: circle(0% at 100% 0%);
+    }
+  
+    /* When the menu is active, apply the circular animation */
+    .nav-links.active {
+      height: 100vh;
+      width: 90%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 3rem 0 0 3rem;
+      animation: circularOpen 0.5s forwards ease-in-out;
+    }
+  
+    /* Close the menu with circular animation */
+    .nav-links:not(.active) {
+      animation: circularClose 0.5s forwards ease-in-out;
+    }
+  
+    /* Mobile view styles for menu items */
+    .nav-links li {
+      margin: 15px 0;
+    }
+  
+    .nav-links li a {
+      color: black;
+      font-size: 18px;
+    }
+  
+    .nav-links li a.active{
+      background-color: transparent;
+    }
+  
+    .nav-links li .active-link.get-started{
+      background-color: transparent;
+      color: black;
+    }
+  
+  }
+
+
+  /* General dropdown styling */
+.nav-links li {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 290px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    list-style: none;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    opacity: 0;
+    border-radius: 6px;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown li {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown li a{
+  margin: 0;
+}
+
+.dropdown li a:hover {
+    color: #0163FD;
+}
+
+/* Desktop View Dropdown Styling */
+.nav-links li:hover .dropdown {
+    display: block; /* Show on hover in desktop view */
+    opacity: 1;
+}
+
+/* Mobile View Dropdown Styling */
+@media (max-width: 768px) {
+    .nav-links li .dropdown {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li.open .dropdown {
+        display: flex;
+        opacity: 1; /* Ensure dropdown is visible */
+    }
+
+    .dropdown li a {
+        font-size: 16px;
+        color: #333; /* Default link color */
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown li a:hover {
+        color: #0163FD; /* Change link color on hover */
+    }
+}
